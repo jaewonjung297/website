@@ -4,25 +4,28 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import styled from "styled-components"
+
+const Hello = styled.header`
+  text-align: left;
+  font-size: 200%;
+`
+
+const Paragraph = styled.p`
+  text-align: left;
+  margin: 25px;
+`
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hello!</h1>
-    <p>Welcome to my website!</p>
-    <p>
+    <Hello>Hello</Hello>
+    <Paragraph>Welcome to my website!</Paragraph>
+    <Paragraph>
       I'm a sophomore at Duke University studying computer science. My personal
       interests include economics, finance, statistics, game design, and
-      programming. Scroll to view my past and current projects.{" "}
-    </p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
+      programming. Scroll down to view my past and current projects!{" "}
+    </Paragraph>
     <p>
       <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
