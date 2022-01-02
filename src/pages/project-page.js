@@ -58,7 +58,6 @@ const ProjectPage = () => (
         Click here for the GitHub repository
       </a>
     </ProjectOne>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

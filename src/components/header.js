@@ -27,12 +27,22 @@ const HomeLink = styled(Link)`
   text-decoration: none;
   font-family: "Inconsolata";
 `
+const OtherLink = styled(Link)`
+  padding-left: 20px;
+  color: black;
+  font-weight: 12;
+  font-size: 0.5em;
+  text-decoration: none;
+  font-family: "Inconsolata";
+`
 
 const Header = ({ siteTitle }) => (
   <SiteHeader>
     <Inner>
       <Heading>
         <HomeLink to="/">{siteTitle}</HomeLink>
+        <OtherLink to="/project-page/">Project Page</OtherLink>
+        <OtherLink to="/about/">About</OtherLink>
       </Heading>
     </Inner>
   </SiteHeader>
